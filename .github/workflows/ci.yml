@@ -46,3 +46,7 @@ jobs:
           cd frontend
           npm run build
 
+      # DOCKER
+      - name: Build Docker image
+        run: docker build -t node-angular-ci .
+
